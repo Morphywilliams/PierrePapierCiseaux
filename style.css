@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1{ 
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-family: Tahoma,sans-serif;
+}
+.col-md-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.victoire{
+    text-align: center;
+    background-color: silver;
+    height: max-content;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+hr{
+    width: 10px;
+    height: 35px;
+    background: black;
+    
+}
+.victoire strong{
+    padding: 5px;
+    font-size: 23px;
+}
+.victoire strong span{
+    color: blue;
+    font-size: 18px;
+}
+.alert-success{
+    margin-top: 70px;
+    font-size: 30px;
+    color: blue;
+
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.input-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 60px;
+    width: 450px;
+    font-size: 30px;
+    font-weight: 600;
+    margin:10px;
+}
+.send{
+    position: absolute;
+    margin-top: 150px;
+    height: 50px;
+    width: 150px;
+    background: blue;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+}

@@ -2,6 +2,11 @@
 /* parti fonctionnement */
 
 $message = null;
+
+$compteur_user = 0;
+$compteur_ordi = 1;
+$compteur_null = 0;
+
 if (isset($_POST['submit']) && isset($_POST['choice'])) {
 
   $choix_utilisateur = $_POST['choice']; // Recuperation du choix de l'utilisateur
@@ -12,6 +17,7 @@ if (isset($_POST['submit']) && isset($_POST['choice'])) {
 
     if ($choix_utilisateur == $choix_ordinateur) {
       $message = "Egalité ";
+      $compteur_null++;
     } 
     elseif (
               $choix_utilisateur == "pierre" && $choix_ordinateur == "ciseaux" ||
@@ -20,8 +26,10 @@ if (isset($_POST['submit']) && isset($_POST['choice'])) {
               )
             {
       $message = "Vous avez gagné !";
+      $compteur_user += $compteur_user;
     } else {
       $message = "L'ordinateur a gagné !";
+      $compteur_ordi += $compteur_ordi;
     }
   }else{
     $message = "Entrez un choix ";
